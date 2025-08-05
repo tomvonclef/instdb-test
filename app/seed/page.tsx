@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { seedQuestions } from "../../lib/seed-questions";
 
 export default function SeedPage() {
@@ -31,9 +32,9 @@ export default function SeedPage() {
           <div className="text-green-600 font-medium">
             ✅ Questions seeded successfully!
             <br />
-            <a href="/" className="text-blue-600 underline mt-2 inline-block">
+            <Link href="/" className="text-blue-600 underline mt-2 inline-block">
               Go to Trivia Game
-            </a>
+            </Link>
           </div>
         ) : (
           <button
